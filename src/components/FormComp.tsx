@@ -71,9 +71,9 @@ function FormComp({}: Props) {
       {() => {
         return (
           <Form>
-            <Container maxWidth="xs" sx={{ paddingY: "3.5rem" }}>
+            <Container maxWidth="xs" sx={{ paddingY: "1rem" }}>
               <Grid container>
-                <Grid item xs={12} p={1}>
+                <Grid item xs={12} p={0.5}>
                   <Field name="currency" as="select" id="currency">
                     {({ field, form }: FieldProps) => {
                       return (
@@ -111,7 +111,7 @@ function FormComp({}: Props) {
                   </Field>
                 </Grid>
 
-                <Grid item p={1} xs={4}>
+                <Grid item p={0.5} xs={4}>
                   <Field
                     as={TextField}
                     name="entry_price"
@@ -123,7 +123,7 @@ function FormComp({}: Props) {
                     type="number"
                   />
                 </Grid>
-                <Grid item p={1} xs={4}>
+                <Grid item p={0.5} xs={4}>
                   <Field
                     as={TextField}
                     name="stop_loss"
@@ -135,7 +135,7 @@ function FormComp({}: Props) {
                     type="number"
                   />
                 </Grid>
-                <Grid item p={1} xs={4}>
+                <Grid item p={0.5} xs={4}>
                   <Field
                     as={TextField}
                     name="take_profit"
@@ -147,7 +147,7 @@ function FormComp({}: Props) {
                     type="number"
                   />
                 </Grid>
-                <Grid item p={1} xs={12}>
+                <Grid item p={0.5} xs={12}>
                   <Field
                     as={TextField}
                     name="position_size"
